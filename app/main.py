@@ -5,7 +5,6 @@ import pickle5 as pickle
 import numpy as np
 import pandas as pd
 import operator
-import scikit-learn
 
 
 model = pickle.load(open('model/model.pkl', 'rb'))
