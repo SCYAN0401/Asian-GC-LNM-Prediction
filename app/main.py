@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 import operator
 
-model = pickle.load(with open('/model/model.pkl', 'rb'))
+model = pickle.load(open('/model/model.pkl', 'rb'))
 
 scaler = pickle.load(open('/model/scaler.pkl', 'rb'))
 
