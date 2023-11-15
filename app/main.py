@@ -6,10 +6,10 @@ import numpy as np
 import pandas as pd
 import operator
 
-with open('D:/Python/LNM-A-GC-predict/model.pkl', 'rb') as f:
+with open('model/model.pkl', 'rb') as f:
     model = pickle.load(f)
     
-with open('D:/Python/LNM-A-GC-predict/scaler.pkl', 'rb') as f:
+with open('model/scaler.pkl', 'rb') as f:
     scaler = pickle.load(f)
 
 ###
