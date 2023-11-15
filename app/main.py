@@ -6,11 +6,9 @@ import numpy as np
 import pandas as pd
 import operator
 
-with open('/model/model.pkl', 'rb') as f:
-    model = pickle.load(f)
-    
-with open('/model/scaler.pkl', 'rb') as f:
-    scaler = pickle.load(f)
+model = pickle.load(with open('/model/model.pkl', 'rb'))
+
+scaler = pickle.load(open('/model/scaler.pkl', 'rb'))
 
 ###
 
