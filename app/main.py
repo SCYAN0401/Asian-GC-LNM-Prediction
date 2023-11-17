@@ -45,8 +45,8 @@ def predict(X_test):
     X_test_scaled = scaler.transform(X_test)
     y_pred = model.predict(X_test_scaled)
     
-    st.write("淋巴结转移:red[**阳性**]可能性为 **f"{model.predict_proba(X_test_scaled)[0][1] * 100:.1f}%**。")
-    st.write("淋巴结转移:blue[**阴性**]可能性为 **f"{model.predict_proba(X_test_scaled)[0][0] * 100:.1f}%**。")
+    st.write("淋巴结转移:red[**阳性**]可能性为 f"**{model.predict_proba(X_test_scaled)[0][1] * 100:.1f}**%。")
+    st.write("淋巴结转移:blue[**阴性**]可能性为 f"**{model.predict_proba(X_test_scaled)[0][0] * 100:.1f}**%。")
   
     output = ':red[**阳性**]' if y_pred == 1 else ':blue[**阴性**]'
     return output
