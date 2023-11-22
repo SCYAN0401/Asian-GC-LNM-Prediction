@@ -56,7 +56,7 @@ def main():
     
     st.title('亚洲人群胃癌淋巴结转移预测模型')
 
-    st.write('基于机器学习方法，利用[SEER数据库](https://seer.cancer.gov/registries/data.html)中4658例亚洲人胃癌患者（1988-2020）构建的淋巴结转移预测模型。\
+    st.write('基于人工神经网络（ANN），利用[SEER数据库](https://seer.cancer.gov/registries/data.html)中4658例亚洲人胃癌患者（1988-2020）构建的淋巴结转移预测模型。\
         本模型**仅用于科学研究与教学**，未经过前瞻性临床试验验证，未得到临床应用批准。')
 
     st.divider()
